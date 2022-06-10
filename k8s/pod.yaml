@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-conv-temp
+  labels:
+    app: conv-temp
+spec:
+  containers:
+    - name: conv-temp-web
+      image: alexandrebhte/conversao-temperatura:v1
+      ports:
+        - containerPort: 8080
